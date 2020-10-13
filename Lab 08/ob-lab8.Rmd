@@ -24,8 +24,18 @@ set.seed(1)
 
 # Problem statement
 
-Data points $Y_1, Y_2, \dots, Y_n$ coming from a *mixture model*:
+Data points $Y_1, Y_2, \dots, Y_n$ coming from a **mixture model**:
+$$
+  Y_i \sim^{i.i.d.} \sum_{j=1}^n w_j N(\mu_j, \varepsilon^2).
+$$
+\pause
 
+**What does this mean?**\pause
+
+For every data point:\pause
+
+- let $Z_i$ be a random variable such that $\mathbb{P}(Z_i = j) = w_j$ for $j=1,2,3$,\pause
+- let $Y_i \mid Z_i \sim N(\mu_{Z_i}, \varepsilon^2)$.
 
 
 

@@ -134,6 +134,45 @@ p(Y_i | \mu_1,\mu_2,\mu_3,w_1,w_2,w_3,\tau) &= \sum_{j=1}^3 w_i N(\mu_j, \tau^{-
 \end{align*}
 for $i=1,\ldots n.$
 
+# Task 1
+
+**Derive the joint posterior $p(w_1,w_2,w_3,\mu_1,\mu_2,\mu_3,\varepsilon^2,\mu_0,\sigma_0^2|Y_{1:N})$ up to a normalizing constant.**
+\pause
+
+Let's do the derivations using $\tau = 1/\varepsilon^2$ and $\phi_0 = 1/\sigma_0^2$.\pause
+
+The posterior distribution is always proportional to the full joint distribution:\pause
+\begin{align*}
+&p(Y_{1:n}, \mu_{1:3}, \mu_0, \phi_0, w_{1:3}, \tau) \\\pause
+= &p(Y_{1:n} \mid \mu_{1:3}, w_{1:3}, \tau) p(\mu_{1:3}, \mu_0, \phi_0, w_{1:3}, \tau)\\\pause
+= & p(Y_{1:n} \mid \mu_{1:3}, w_{1:3}, \tau)p(\mu_{1:3} \mid \mu_0, \phi_0)p(\mu_0) p(\phi_0) p(w_{1:3}) p(\tau)\\\pause
+= & p(Y_{1:n} \mid \mu_{1:3}, w_{1:3}, \tau)p(\mu_{1:3} \mid \mu_0, \phi_0)p(\mu_0) p(\phi_0) p(\tau)\\\pause
+= & \left(\prod_{i=1}^n p(Y_i \mid \mu_{1:3}, w_{1:3}, \tau) \right) \left(\prod_{j=1}^3 p(\mu_j \mid \mu_0, \phi_0) \right) p(\mu_0)p(\phi_0)p(\tau).
+\end{align*}
+
+# Task 1
+
+The full joint:
+$$
+\left(\prod_{i=1}^n p(Y_i \mid \mu_{1:3}, w_{1:3}, \tau) \right) \left(\prod_{j=1}^3 p(\mu_j \mid \mu_0, \phi_0) \right) p(\mu_0)p(\phi_0)p(\tau).\pause
+$$
+
+And
+$$
+  p(Y_i \mid \mu_{1:3}, w_{1:3}, \tau) = \sum_{j=1}^3 w_j N(Y_i; \mu_j, \tau),\pause
+$$
+$$
+p(\mu_j \mid \mu_0, \phi_0) = N(\mu_j; \mu_0, \phi_0^{-1}),\pause
+$$
+$$
+  p(\mu_0) = N(\mu_0; 0,3),\pause
+$$
+$$
+  p(\phi_0) = \text{Gamma}(\phi_0; 2,2),\pause
+$$
+$$
+  p(\tau) = \text{Gamma}(\tau; 2,2).
+$$
 
 
 

@@ -1,0 +1,31 @@
+---
+title: "Lab 8: Data Augmentation"
+author: "Olivier Binette"
+date: "Friday October 9, 2020"
+fontsize: 11pt
+output: 
+  beamer_presentation:
+    include:
+      in_header: preamble.tex
+---
+
+```{r, echo=FALSE, include=FALSE}
+set.seed(1)
+```
+
+# Agenda
+
+- Problem statement
+- Go through the lab's tasks
+- Office hours
+
+#
+\section{Problem statement}
+
+# Problem statement
+
+Data points $Y_1, Y_2, \dots, Y_n$ coming from a *mixture model*:
+
+
+
+

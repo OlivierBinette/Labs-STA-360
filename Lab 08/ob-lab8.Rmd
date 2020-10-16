@@ -1,7 +1,7 @@
 ---
 title: "Lab 8: Data Augmentation"
 author: "Olivier Binette and Rebecca C. Steorts"
-date: "Friday October 9, 2020"
+date: "Friday October 16, 2020"
 fontsize: 10pt
 output: 
   beamer_presentation:

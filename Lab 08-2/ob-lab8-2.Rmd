@@ -33,6 +33,14 @@ set.seed(1)
 - Please fill out the TA section of your class evaluation!
   - Your evaluations are very important to me.
 
+# Announcements
+
+On DukeHub:
+
+![](evaluation.png)
+
+After filling out the course evaluation, you should have the option to add an evaluation for your TAs.
+
 # 
 \section{Review of gaussian mixture models}
 
